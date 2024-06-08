@@ -32,20 +32,20 @@ This project was developed by a team of 6 students.
 
 ## Preview
 
-![Screenshot 1](imgs/home.png)
+![Screenshot 1](Imgs/home.png)
 *Landing view*
 
-![Screenshot 2](imgs/home2.png)
+![Screenshot 2](Imgs/home2.png)
 *Landing view further down*
 
-![Screenshot 3](imgs/home3.png)
+![Screenshot 3](Imgs/home3.png)
 *Landing view bottom*
 
-![Screenshot 4](imgs/gallery.png)
+![Screenshot 4](Imgs/gallery.png)
 *Gallery*
 
-![Screenshot 5](imgs/choice.png)
+![Screenshot 5](Imgs/choice.png)
 *Choice*
 
-![Screenshot 6](imgs/customize2.png)
+![Screenshot 6](Imgs/customize2.png)
 *Customize*
