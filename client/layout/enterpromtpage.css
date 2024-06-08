@@ -1,0 +1,130 @@
+#exampel-promts-container {
+    position: absolute;
+    width: 465px;
+    height: 120px;
+    margin-top: 100px;
+    background: #FEE2B6;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotatingHeadings {
+    height: 25px;
+    line-height: 25px;
+    font-family: avenir;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.rotatingPrompt {
+    position: relative;
+    color: black;
+    animation: animation 26s ease infinite;
+}
+
+@keyframes animation {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    5% {
+        top: 0;
+    }
+
+    15% {
+        top: -25px;
+    }
+
+    25% {
+        top: -25px;
+    }
+
+    35% {
+        top: -50px;
+    }
+
+    40% {
+        top: -50px;
+    }
+
+    50% {
+        top: -75px;
+    }
+
+    60% {
+        top: -75px;
+    }
+
+    70% {
+        top: -100px;
+    }
+
+    80% {
+        top: -100px;
+    }
+
+    90% {
+        top: -125px;
+    }
+
+    95% {
+        top: -125px;
+    }
+}
+
+.input-container {
+    border: 1.5px solid #676565;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#input-writer {
+    width: 540px;
+    height: 40px;
+    border: 0;
+    box-shadow: none;
+    color: #000000;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.generate-buttons {
+    width: 560px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.prompt-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+}
+
+#loggedintext {
+    margin-top: -2rem;
+}
+
+#notloggedintext {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.login-button {
+    width: 12rem;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,212 @@
+.aboutus-container {
+  width: 100%;
+  height: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+  background-image: url(../static/exampleimages/Gradient-rectangle.png);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.order-and-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#order-information-container {
+  height: 425px;
+  width: 400px;
+  position: relative;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: #BFBEBE;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  overflow-y: auto;
+  background-image: url(../static/exampleimages/container-background.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+#total-price-container {
+  height: 55px;
+  width: 400px;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-left: 20px;
+  display: flex;
+  border-color: #BFBEBE;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+#personal-information-container {
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Avenir';
+  font-style: normal;
+  border-color: #BFBEBE;
+  border-style: solid;
+  background-image: url(../static/exampleimages/container-background.png);
+  background-repeat: no-repeat;
+}
+
+#checkout-form {
+  margin-top: 25px;
+}
+
+.form-control {
+  width: 300px;
+  border-radius: 15px;
+}
+
+label {
+  text-align: center;
+}
+
+.checkout-info {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 90px;
+  margin-top: 25px;
+}
+
+.product-img {
+  width: 90px;
+  height: 90px;
+}
+
+.order-trashcan-img {
+  margin-left: 300px;
+  margin-bottom: 20px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 1px solid #BFBEBE;
+  border-radius: 5px;
+}
+
+.checkout-info small {
+  display: block;
+  top: 30px;
+  margin-left: 10px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 0px;
+  color: #000000;
+}
+
+.order-quantity {
+  margin-left: 260px;
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  margin-bottom: 20px;
+  border: 1px solid #BFBEBE;
+  border-radius: 5px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+.poster-price {
+  position: absolute;
+  margin-left: 260px;
+  margin-bottom: 75px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+}
+
+.tot {
+  position: relative;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #000000;
+}
+
+.tot-price {
+  position: relative;
+  margin-left: 195px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #000000;
+}
+
+/*-----------------Success view--------------*/
+.successpage-container {
+  margin-top: 55px;
+}
+
+.success-text {
+  font-family: 'Avenir';
+  font-style: normal;
+  color: black;
+}
+
+#success-header-text {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+#success-body-text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,308 @@
+/*-----------------first page-----------------*/
+.firstpage-container {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    background-color: white;
+    background-image: url(../static/exampleimages/Rectangle.png);
+    background-size: cover;
+}
+
+#intro-text {
+    width: 650px;
+    height: 335px;
+    top: 263px;
+}
+
+.firstpage-container h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.firstpage-container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#start-creat-button {
+    font-size: 22px;
+    width: 284px;
+    height: 57px;
+}
+
+#intro-image {
+    width: 400px;
+    height: 550px;
+
+}
+
+/*-----------------perks container-----------------*/
+#perks-container {
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #FEAC71;
+    color: #FFFF;
+}
+
+.perks-componant {
+    height: 50px;
+    padding-right: 5px;
+    background-blend-mode: color-dodge;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image-margin {
+    margin-right: 7px;
+}
+
+.perks-componant p {
+    margin-top: 5px;
+    font-size: 17px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*-----------------inspired container-----------------*/
+.inspired-container {
+    width: 100%;
+    height: 693px;
+    background-color: #FEDBA4;
+}
+
+#inspired-text {
+    height: fit-content;
+}
+
+.inspired-container h3 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+#inspired-carousel {
+    width: 100%;
+    height: 400px;
+}
+
+.inspired-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+#get-inspired {
+    margin-left: 40px;
+    margin-top: 90px;
+}
+
+/*--------------------------how it works-------------------------*/
+.hiw-container {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFF;
+}
+
+#wave-big {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#wave-small {
+    margin-top: -300px;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+}
+
+#customizeposterpreview {
+    margin-top: -785px;
+    width: 45%;
+    z-index: 3;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hiw-text {
+    margin-top: -120px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start-creat-button {
+    margin-top: 50px;
+}
+
+.htwagp-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 26px;
+}
+
+/*-----------------get inspired slide-----------------*/
+.top-content {
+    width: 100%;
+    padding-top: 10px; 
+}
+
+.carousel-control-next, .carousel-control-prev {
+    border: 0;
+}
+
+  @media (min-width: 768px) and (max-width: 991px) {
+      .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+          position: absolute;
+          top: 0;
+          right: -33.3333%;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+      }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+      .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+          position: absolute;
+          top: 0;
+          right: -50%;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+      }
+  }
+
+  @media (min-width: 576px) {
+      .carousel-item {
+          margin-right: 0;
+      }
+  
+      .carousel-inner .active + .carousel-item {
+          display: block;
+      }
+      
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+          transition: none;
+      }
+  
+      .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+      }
+      
+      .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+      .carousel-item-next.carousel-item-left + .carousel-item,
+      .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+          position: relative;
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+      } 
+      
+      .carousel-inner .carousel-item-prev.carousel-item-right {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+      }
+      
+      .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+      .carousel-item-prev.carousel-item-right + .carousel-item,
+      .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+          position: relative;
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+      }
+  }
+  
+  @media (min-width: 768px) {
+
+    .carousel-inner .active + .carousel-item + .carousel-item {
+          display: block;
+      }
+   
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+          transition: none;
+      }
+      
+      .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+      }
+      
+      .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+          position: relative;
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+      }
+      
+      .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+          position: relative;
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+      }
+  }
+
+@media (min-width: 991px) {
+
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+    }
+}
+
+.top-content .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("../static/exampleimages/prev.svg");
+}
+ 
+.top-content .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("../static/exampleimages/next.svg");
+}

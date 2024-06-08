@@ -1,0 +1,48 @@
+<br>
+<br>
+<br>
+<div class="center-container align-items-center">
+    <div class="login-container my-5">
+        <div id="button-group" class="row row-first justify-content-center">
+            <button type="button" class="text-font col-4 text-center login-button mt-3 border border-dark" id="signin-button"
+             onclick="loadSigninContent()">Sign in</button>
+            <button type="button" class="text-font col-4 text-center login-button mt-3" id="signup-button"
+            onclick="loadSignupContent()">Sign up</button>
+            
+<!--             <a href="#" class="text-decoration-none text-font col-4 login-button text-center"
+                id="signin-button">Sign in</a>
+            <a href="#" class="text-decoration-none text-font col-4 login-button text-center" id="signup-button">Sign
+                up</a> -->
+        </div>
+        <hr class="w-75">
+        <br>
+        <p class="text-center d-none font-weight-bold" id="error-text-signin">Wrong email or password</p>
+        <p class="text-center d-none font-weight-bold" id="error-text-signup">The email is already registered to an
+            account, try login or check spelling.</p>
+        <div id="login-form">
+            <form class="d-felx justify-content-center" onsubmit="login(this); return false;">
+                <div class="row justify-content-center m-0">
+                    <label for="email" class="text-font col-9 p-0 font-weight-bold">email adress</label>
+                    <input type="text" class="form-control text-font form-input col-9" id="email"
+                        placeholder="Enter email">
+                </div>
+                <br>
+                <div class="row justify-content-center m-0 d-none" id="name-div">
+                    <label for="name" class="text-font col-9 p-0 font-weight-bold">name</label>
+                    <input type="text" class="form-control text-font form-input col-9" id="name" placeholder="Name">
+                </div>
+                <br class="d-none" id="name-break">
+                <div class="row justify-content-center m-0">
+                    <label for="password" class="text-font col-9 p-0 font-weight-bold">password</label>
+                    <input type="password" class="form-control text-font form-input col-9" id="password"
+                        placeholder="Password">
+                </div>
+                <br>
+                <div class="justify-content-center row m-0">
+                    <button type="submit" class="btn btn-secondary col-9 text-font border border-dark"
+                        id="login-form-button" data-toggle="popover" data-placement="top">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

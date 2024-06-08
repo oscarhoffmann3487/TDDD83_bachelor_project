@@ -1,0 +1,63 @@
+#welcomeheader {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.container-account-page {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#previously-genereate-img {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 80px;
+    align-items: center;
+    Height: fit-content;
+}
+
+#order-history {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 80px;
+    align-items: center;
+    Height: fit-content;
+}
+
+.standard-box {
+    background: #FEE2B6;
+    border-radius: 26px;
+    min-height: 40px;
+}
+
+.previously-genereate-img .col-3 {
+    display: inline-block;
+    scale: 80%;
+}
+
+.previously-genereate-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.order-item img {
+    max-width: 10%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.order-return {
+    flex-wrap: wrap;
+}
+
+.return-text {
+    margin: auto;
+}

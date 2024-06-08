@@ -1,0 +1,51 @@
+.btn:hover {
+    background-color: #2943C9;
+}
+
+.generated-container h4 {
+    margin-top: 5%;
+    margin-bottom: -100px;
+}
+
+#row {
+    margin-bottom: -7%;
+}
+
+#go-back {
+    width: 195px;
+    height: 60px;
+    left: 202px;
+}
+
+.img-fluid {
+    border: 1px solid black;
+}
+
+.generated-container .col-3 {
+    display: inline-block;
+    scale: 50%;
+    padding: 5px;
+    margin: 0;
+}
+
+.generated-container .col-3:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container-generated-posters img {
+    width: 100%;
+    height: 100%;
+}
+
+#go-back {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}

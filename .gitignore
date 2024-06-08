@@ -1,0 +1,18 @@
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore environment variable files
+server/.env
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store
+
+# Python specific ignores
+server/__pycache__/

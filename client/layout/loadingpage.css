@@ -1,0 +1,49 @@
+.loding-margin{
+    margin-top: 220px;
+}
+
+.loading-bar{
+    width: 500px;
+    height: 20px;
+    border-radius: 15px;
+    position: absolute; 
+    background: #D9D9D9;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #FFFFFF);
+}
+
+.loading-bar::before{
+    position: absolute; 
+    content: '';
+    inset: 0;
+    background: linear-gradient(90deg, #2F4CE4, #2E46C0, #8A75D4, #BB99B8, #C5A1B2, #CDA6AD, #EBBC9D, #F4C397, #FEC992, #F4C397, #EBBC9D, #CDA6AD, #C5A1B2, #BB99B8, #8A75D4, #2E46C0);    
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+    border-radius: 15px;
+}
+
+.loading-bar::after{
+    position: absolute; 
+    content: '';
+    inset: 0;
+    background: linear-gradient(90deg, #2F4CE4, #2E46C0, #8A75D4, #BB99B8, #C5A1B2, #CDA6AD, #EBBC9D, #F4C397, #FEC992, #F4C397, #EBBC9D, #CDA6AD, #C5A1B2, #BB99B8, #8A75D4, #2E46C0);    
+    animation: animate 30s linear;
+    background-size: 500%;
+    border-radius: 15px;
+}
+
+@keyframes animate{
+    0%
+    {
+        background-position: 0 0;
+    }
+    0%
+    {
+        background-position: 500% 0;
+    }
+}
+
+#generating-images {
+    font-family: gamingRetro;
+    font-size: 38px;
+    margin-top: 145px;
+}

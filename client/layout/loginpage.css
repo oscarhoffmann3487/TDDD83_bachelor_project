@@ -1,0 +1,35 @@
+.login-container{
+    width: 50%; 
+    background-color: #FEE2B6;
+    border-radius: 26px;
+}
+
+.login-container .login-button{
+    background-color: transparent;
+    color:black;
+    font-size: 25px;
+    border:0;
+    outline: none;
+    border-radius: 15px;
+}
+
+.login-container p{
+    color:red;
+}
+
+.login-container hr{
+    height:2px;
+    border-width:0;
+    background-color: black;
+    position:inherit;
+}
+
+.login-container .form-input{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.login-container form{
+    margin-bottom: 40px;
+}
+

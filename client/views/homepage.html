@@ -1,0 +1,130 @@
+<div class="firstpage-container">
+    <div id="intro-text">
+        <h2 class="text-font">Create something that is uniquely yours</h2>
+        <br>
+        <p class="text-font">
+            You get to create wall art that matches all your needs
+            by customizing size, content via AI and frame by just a few clicks.
+        </p>
+        <button type="purple-button" class="btn btn-secondary text-font" id="start-creat-button" data-toggle="popover"
+            onclick="startCreating()">start creating</button>
+    </div>
+    <div>
+        <img src="../static/exampleimages/Poster-mockup-blackPoster-mockup.png" id="intro-image">
+    </div>
+</div>
+<div id="perks-container" class="row align-items-center">
+    <div class="perks-componant col justify-content-center">
+        <img src="../static/exampleimages/lightning.png" class="image-margin">
+        <p class="text-font">Fast delivery</p>
+    </div>
+    <div class="perks-componant col justify-content-center">
+        <img src="../static/exampleimages/truck.png" class="image-margin">
+        <p class="text-font">Free shipping</p>
+    </div>
+    <div class="perks-componant col justify-content-center">
+        <img src="../static/exampleimages/quality.png">
+        <p class="text-font">High quality</p>
+    </div>
+    <div class="perks-componant col justify-content-center">
+        <img src="../static/exampleimages/payment.png" class="image-margin">
+        <p class="text-font">Safe payments</p>
+    </div>
+</div>
+<div class="inspired-container row m-0">
+    <div id="inspired-text">
+        <h3 class="text-font" id="get-inspired">Get inspired.</h3>
+    </div>
+    <div class="top-content align-content-center justify-content-center">
+        <div class="container-fluid">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <!-- TODO: take away yhe diffrent grid scale -->
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                        <img src="../static/exampleimages/frame1.svg" class="img-fluid1 mx-auto d-block" alt="img0">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame2.svg" class="img-fluid1 mx-auto d-block" alt="img1">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame3.svg" class="img-fluid1 mx-auto d-block" alt="img2">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame4.svg" class="img-fluid1 mx-auto d-block" alt="img3">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame5.svg" class="img-fluid1 mx-auto d-block" alt="img4">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame6.svg" class="img-fluid1 mx-auto d-block" alt="img5">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame7.svg" class="img-fluid1 mx-auto d-block" alt="img6">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="../static/exampleimages/frame8.svg" class="img-fluid1 mx-auto d-block" alt="img7">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hiw-container text-center">
+    <div>
+        <img src="../static/exampleimages/wave-big.png" id="wave-big">
+        <img src="../static/exampleimages/wave-small.png" id="wave-small">
+        <img src="../static/exampleimages/customizeposterpreview.png" id="customizeposterpreview">
+    </div>
+    <div class="hiw-text">
+        <div class="row m-0">
+            <div class="col text-center">
+                <h4 class="text-font">1. Generate a design</h4>
+                <p class="text-font">Create your own design with inputing prompts.
+                    The AI will then generate a unique design from your ideas.
+                    Pick out one of the four generated artworks.</p>
+            </div>
+            <div class="col text-center">
+                <h4 class="text-font">2. Customize your poster</h4>
+                <p class="text-font">Play around with different sizes, frames, margins and text
+                    combinations of your picked poster. Make it yours!</p>
+            </div>
+            <div class="col text-center">
+                <h4 class="text-font">3. Order and share</h4>
+                <p class="text-font">Complete your order by putting it in the cart and
+                    then fill out the neccessary fields and yout order will arrive within 3-5 days.</p>
+            </div>
+        </div>
+        <div class="row m-0 justify-content-center">
+            <button type="purple-button text-center" class="btn btn-secondary text-font" id="start-creat-button"
+                data-toggle="popover" onclick="startCreating()">
+                start creating</button>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="htwagp-container text-center text-font">
+            <h4>How to write a prompt </h4>
+            <br>
+            <p>To write a good text-to-image prompt,
+                it’s recommended to be clear with the main idea and to define the details
+                and styles you want to replicate. A prompt with at least 3 to 7 words is ideal,
+                as it provides the AI with a clear context.
+                <br><br>
+                Be sure to include adjectives to infuse multiple feelings into the artwork,
+                as well as style keywords in order to achieve the desired overall mood.
+                Down below is a list of adjectives and styles that might help spark your creativity!
+                <br><br>
+                <i>Examples of adjectives: conceptual, realistic, complex, colourful
+                    <br>
+                    Examples of style keywords: surrealism, digital art, fantasy, modern, minimal, pixel art</i>
+            </p>
+        </div>
+    </div>
+</div>

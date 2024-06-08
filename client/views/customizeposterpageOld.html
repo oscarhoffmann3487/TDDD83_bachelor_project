@@ -1,0 +1,406 @@
+<script src="static/customizeposterpage.js" type="text/javascript"></script>
+
+<div id="customizePosterPageFrame" style="margin-bottom: -10%;">
+  <div id="images">
+    <div id="image-frame-small-upper">
+      <div id="image-frame-small-upper-picture" style="outline:0px solid black; border:0px solid white;">
+      </div>
+    </div>
+    <div id="image-frame-small-lower">
+      <div id="image-frame-small-lower-picture" style="outline:0px solid black; border:0px solid white;">
+      </div>
+    </div>
+    <div id="image-frame-large" style="outline:0px solid black; border:0px solid white;">
+
+    </div>
+  </div>
+  <div class="dropdown show cusromizing-dropdown p-2">
+    <div>
+      <!-- label for dropdown menu options-->
+      <label for="size">size</label>
+      <br>
+      <!-- dropdwon menu button -->
+      <a id="size" class="btn btn-secondary dropdown-toggle dropdown-button" href="#" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value=""></a>
+      <!-- actual dropdown menu that appears on click -->
+      <div class="dropdown-menu">
+        <table class="dropdownTable">
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeBorder1()">20x20 cm</button>
+              <script>
+                function changeBorder1() {
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.width = "50px";
+                  element.style.height = "50px";
+                  element.style.left = "84px";
+                  element.style.top = "42px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.width = "50px";
+                  element.style.height = "50px";
+                  element.style.left = "93px";
+                  element.style.top = "54px";
+                  updateSizeSelection("20x20");
+                  replaceButtonText('size', '20x20');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="20x20DropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeBorder2()">40x40 cm</button>
+              <script>
+                function changeBorder2() {
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.width = "60px";
+                  element.style.height = "60px";
+                  element.style.left = "79px";
+                  element.style.top = "37px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.width = "60px";
+                  element.style.height = "60px";
+                  element.style.left = "88px";
+                  element.style.top = "49px";
+                  updateSizeSelection("40x40");
+                  replaceButtonText('size', '40x40');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="40x40DropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeBorder3()">50x50 cm</button>
+              <script>
+                function changeBorder3() {
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.width = "70px";
+                  element.style.height = "70px";
+                  element.style.left = "74px";
+                  element.style.top = "32px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.width = "70px";
+                  element.style.height = "70px";
+                  element.style.left = "83px";
+                  element.style.top = "44px";
+                  updateSizeSelection("50x50");
+                  replaceButtonText('size', '50x50');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="50x50DropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeBorder4()">60x60 cm</button>
+              <script>
+                function changeBorder4() {
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.width = "80px";
+                  element.style.height = "80px";
+                  element.style.left = "70px";
+                  element.style.top = "28px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.width = "80px";
+                  element.style.height = "80px";
+                  element.style.left = "79px";
+                  element.style.top = "40px";
+                  updateSizeSelection("60x60");
+                  replaceButtonText('size', '60x60');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="60x60DropDownPricing">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <label for="frame">frame*</label>
+      <br>
+      <a id="frame" class="btn btn-secondary dropdown-toggle dropdown-button" href="#" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
+      </a>
+      <div class="dropdown-menu">
+        <table class="dropdownTable">
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame0()">no frame</button>
+              <script>
+                function changeFrame0() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "0px";
+                  element.style.outlineColor = "solid black";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "0px";
+                  element.style.outlineColor = "solid black";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "0px";
+                  element.style.outlineColor = "solid black";
+                  updateFrameSelection("none");
+                  replaceButtonText('frame', 'No frame');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="noframeDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame1()">white</button>
+              <script>
+                function changeFrame1() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "10px";
+                  element.style.outlineColor = "white";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "white";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "white";
+                  updateFrameSelection("white");
+                  replaceButtonText('frame', 'white');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="whiteDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame2()">brown</button>
+              <script>
+                function changeFrame2() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "10px";
+                  element.style.outlineColor = "SaddleBrown";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "SaddleBrown";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "SaddleBrown";
+                  updateFrameSelection("brown");
+                  replaceButtonText('frame', 'brown');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="brownDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame3()">black</button>
+              <script>
+                function changeFrame3() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "10px";
+                  element.style.outlineColor = "black";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "black";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "black";
+                  updateFrameSelection("black");
+                  replaceButtonText('frame', 'black');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="blackDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame4()">gold</button>
+              <script>
+                function changeFrame4() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "10px";
+                  element.style.outlineColor = "goldenrod";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "goldenrod";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "goldenrod";
+                  updateFrameSelection("goldenrod");
+                  replaceButtonText('frame', 'gold');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="goldDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeFrame5()">sand</button>
+              <script>
+                function changeFrame5() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.outlineWidth = "10px";
+                  element.style.outlineColor = "burlywood";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "burlywood";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.outlineWidth = "2px";
+                  element.style.outlineColor = "burlywood";
+                  updateFrameSelection("burlywood");
+                  replaceButtonText('frame', 'sand');
+                }
+              </script>
+            </td>
+            <td class="framePricing" id="sandDropDownPricing">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <label for="whitemargin">white margin</label>
+      <br>
+      <a id="whitemargin" class="btn btn-secondary dropdown-toggle dropdown-button" href="#" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
+      </a>
+      <div class="dropdown-menu">
+        <table class="dropdownTable">
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeMargin1()">none</button>
+              <script>
+                function changeMargin1() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.borderWidth = "0px";
+                  element.style.borderColor = "white";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.borderWidth = "0px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.borderWidth = "0px";
+                  updateMarginSelection("No margin");
+                  replaceButtonText('whitemargin', 'None');
+                }
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeMargin2()">10 %</button>
+              <script>
+                function changeMargin2() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.borderWidth = "10px";
+                  element.style.borderColor = "white";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.borderWidth = "2px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.borderWidth = "2px";
+                  updateMarginSelection("10%");
+                  replaceButtonText('whitemargin', '10 %');
+                }
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeMargin3()">20 %</button>
+              <script>
+                function changeMargin3() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.borderWidth = "20px";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.borderWidth = "4px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.borderWidth = "4px";
+                  updateMarginSelection("20%");
+                  replaceButtonText('whitemargin', '20 %');
+                }
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeMargin4()">30 %</button>
+              <script>
+                function changeMargin4() {
+                  var element = document.getElementById("image-frame-large");
+                  element.style.borderWidth = "30px";
+                  var element = document.getElementById("image-frame-small-upper-picture");
+                  element.style.borderWidth = "6px";
+                  var element = document.getElementById("image-frame-small-lower-picture");
+                  element.style.borderWidth = "6px";
+                  updateMarginSelection("30%");
+                  replaceButtonText('whitemargin', '30 %');
+                }
+              </script>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <label for="papertype">paper type*</label>
+      <br>
+      <a id="papertype" class="btn btn-secondary dropdown-toggle dropdown-button" href="#" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="test">
+      </a>
+      <div class="dropdown-menu">
+        <table class="dropdownTable">
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeStandard()">matte</button>
+              <script>
+                function changeStandard() {
+                  updatePaperSelection("matte"); //lägg till i js-filen
+                  replaceButtonText('papertype', 'Matte');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="standardDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="dropdown-item" onclick="changeGlossy()">glossy</button>
+              <script>
+                function changeGlossy() {
+                  updatePaperSelection("glossy"); //lägg till i js-filen
+                  replaceButtonText('papertype', 'Glossy');
+                }
+              </script>
+            </td>
+            <td class="dropDownPricing" id="GlossyDropDownPricing">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+   
+    </div>
+  </div>
+  <div class="gobackbutton"></div>
+  <button type="button" class="btn btn-primary customize-buttons" id="addToCartBtn" onclick="addToCart()">
+    <span class="customize-buttons-text" id="addToCartText"> add to cart  -</span>
+    <span id="priceBoxText"> </span>
+  </button>
+
+  <div style="margin-left: 15%; margin-right: 32%; margin-top: -430px; margin-bottom: -100px;">
+    <p style="margin-top: 170px;">*Frame: our frames are crafted with high-quality wood and made from sustainably
+      sourced materials.</p>
+    <br>
+    <p>*Paper type: Matte is a free option that is
+      perfect for spaces with natural light, while glossy is ideal for darker rooms or spaces that require a more 
+      vibrant color display, and is available for a small additional cost.</p>
+    <img style="scale: 30%; margin-top: -48%; margin-left: 65%" src="../static/exampleimages/matte_glossy.png">
+
+  </div>
+</div>

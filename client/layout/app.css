@@ -1,0 +1,334 @@
+p {
+    font-family: avenir;
+}
+
+h4 {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h6 {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.text-font {
+    font-family: avenir;
+    font-size: 18px;
+}
+
+.btn {
+    background: #2F4CE4;
+    border-radius: 15px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#view-container {
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+}
+
+/*------------Navbar-----------------*/
+#nvabar-background {
+    margin-top: auto;
+    width: 100%;
+    height: 131px;
+    background-image: url(../static/exampleimages/Gradient.png);
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.navbar {
+    width: 95%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 26px;
+}
+
+@font-face {
+    font-family: gamingRetro;
+    src: url(../static/font/Retro_Gaming.ttf);
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(../static/font/Metropolis-Medium.otf);
+}
+
+#logo-button {
+    margin-left: 15px;
+    font-family: gamingRetro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+a:hover {
+    color: black;
+}
+
+.navbar-buttons {
+    margin-left: 15px;
+    font-family: avenir;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    user-select: none;
+    color: #000000;
+}
+
+#user-img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+/*-----------------Checkout cart------------------------------------------*/
+.dropdwn {
+    overflow: visible;
+    position: relative;
+    height: 60px;
+    width: 120px;
+    top: 13px;
+}
+
+#cart-dropdown {
+    position: absolute;
+    top: 60px;
+    right: -15px;
+    padding-top: 30px;
+    width: 316px;
+    background: white;
+    border: 1px solid #BFBEBE;
+    border-radius: 26px;
+}
+
+#empty-cart-dropdown {
+    position: absolute;
+    top: 60px;
+    right: -15px;
+    width: 316px;
+    height: 435px;
+    background: white;
+    border: 1px solid #BFBEBE;
+    border-radius: 26px;
+}
+
+.trashcan-img {
+    margin-left: 240px;
+    margin-bottom: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #BFBEBE;
+    border-radius: 5px;
+}
+
+hr {
+    position: absolute;
+    width: 249px;
+    height: 0px;
+    left: 33px;
+    top: 287px;
+    border: 1px solid #000000;
+}
+
+.total {
+    position: absolute;
+    width: 41px;
+    height: 25px;
+    left: 33px;
+    top: 315px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.total-price {
+    position: absolute;
+    width: 100px;
+    height: 23px;
+    left: 222px;
+    top: 320px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.checkout-button {
+    position: absolute;
+    margin-left: 33px;
+    width: 249px;
+    height: 45px;
+    top: 360px;
+    background: #2F4CE4;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.cart-footer {
+    position: absolute;
+}
+
+table {
+    width: 100%;
+}
+
+#empty-cart-text {
+    position: absolute;
+    width: 225px;
+    height: 51px;
+    left: 46px;
+    top: 105px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+#cart-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.product-img {
+    width: 90px;
+    height: 90px;
+}
+
+.cart-info small {
+    display: block;
+    top: 30px;
+    margin-left: 10px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 0px;
+    color: #000000;
+}
+
+.product-quantity {
+    margin-left: 200px;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    margin-bottom: 20px;
+    border: 1px solid #BFBEBE;
+    border-radius: 5px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+.price {
+    position: absolute;
+    margin-left: 200px;
+    margin-bottom: 75px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*---------------------Footer------------------------------*/
+#left-tape {
+    position: relative;
+    left: 5px;
+    top: 1px;
+    scale: 50%;
+    transform: rotate(1.36deg);
+}
+
+#right-tape {
+    position: relative;
+    right: 1px;
+    top: 1px;
+    scale: 50%;
+    transform: rotate(178.64deg);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-image: url('../static/exampleimages/footer.png');
+    background-size: cover;
+}
+
+.list-style {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    list-style: none;
+}
+
+#posterAIzed-logo-footer {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.black-text {
+    color: black;
+}
+
+#footer-readmore-button {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+#footer-sendemail-button {
+    width: 200px;
+    margin-bottom: 50px;
+}

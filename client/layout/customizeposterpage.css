@@ -1,0 +1,299 @@
+#customizePosterPageFrame {
+    width: 100%;
+    height: 1000px;
+    background-color: #FFFFFF;
+}
+
+#images {
+    width: 912px;
+    height: 570px;
+    float: left;
+}
+
+#image-frame-large {
+    position: absolute;
+    width: 482px;
+    height: 470px;
+    left: 425px;
+    top: 231px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+}
+
+#image-frame-small-upper {
+    position: absolute;
+    width: 192px;
+    height: 219px;
+    left: 202px;
+    top: 231px;
+    border: 1px solid black;
+    background-image: url("../static/exampleimages/living-room-wall-wo.jpeg");
+    background-size: cover;
+}
+
+#image-frame-small-upper-picture {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 79px;
+    top: 37px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+}
+
+#image-frame-small-lower {
+    position: absolute;
+    width: 192px;
+    height: 219px;
+    left: 202px;
+    top: 481px;
+    border: 1px solid black;
+    background-image: url("../static/exampleimages/tabletop.jpeg");
+    background-size: cover;
+}
+
+.imagecust {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image-frame-small-lower-picture {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 88px;
+    top: 49px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.cusromizing-dropdown {
+    margin-top: 5%;
+    left: 50px;
+}
+
+.dropdown-button {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    font-family: avenir;
+    color: black;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 30px;
+}
+
+.dropdown-button.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-button:hover {
+    background: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.dropdown-item {
+    background: #FFFFFF;
+    margin-bottom: 0px;
+    border-radius: 30px;
+}
+
+.dropdown-menu {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.dropdownTable {
+    border-collapse: collapse;
+}
+
+.dropdownTable.button {
+    border: none;
+    font-weight: normal;
+    transition: font-weight 0.2s ease-in-out;
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.dropdownTable.button:hover {
+    font-weight: bold;
+}
+
+.customize-buttons {
+    background: #2F4CE4;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+#goBackCustomizeBtn {
+    position: absolute;
+    width: 195px;
+    height: 60px;
+    left: 202px;
+    top: 724px;
+    background-image: url('../static/exampleimages/arrow-wo-background.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+#addToCartBtn {
+    position: absolute;
+    width: 484px;
+    height: 60px;
+    left: 425px;
+    top: 724px;
+}
+
+#addToCartText {
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-style: normal;
+    font-family: 'Avenir';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+#priceBox {
+    position: absolute;
+    left: 1050px;
+    top: 724px;
+}
+
+#priceBoxText {
+    margin-left: -15px;
+    font-size: 25px;
+    font-family: avenir;
+}
+
+.dropDownPricing{
+    color:grey;
+}
+
+.framePricing{
+    color:grey;
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #383838;
+    margin-left: 0;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: avenir;
+}
+
+.size-radio-btn.check{
+    background: #2F4CE4;
+    border: #2F4CE4;
+    color: #fff;
+}
+
+.frame-radio-btn.frame-bigger {
+    width: 221px;
+}
+
+.frame-radio-btn{
+    display: inline-block;
+    width: 108px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #383838;
+    margin-left: 1px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: avenir;
+}
+
+#con-heading {
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#heading {
+    text-align: left;
+    left: -50px;
+}
+
+.frame-radio-btn.check{
+    background: #2F4CE4;
+    border: #2F4CE4;
+    color: #fff;
+}
+
+.margin-radio-btn.margin-bigger{
+    width: 335.5px;
+}
+
+.margin-radio-btn{
+    display: inline-block;
+    width: 108px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #383838;
+    margin-left: 1px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: avenir;
+}
+
+.margin-radio-btn.check{
+    background: #2F4CE4;
+    border: #2F4CE4;
+    color: #fff;
+}
+
+.papertype-radio-btn{
+    display: inline-block;
+    width: 165px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #383838;
+    margin-left: 1px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: avenir;
+}
+
+.papertype-radio-btn.check{
+    background: #2F4CE4;
+    border: #2F4CE4;
+    color: #fff;
+}
+
+#heading, #size-heading, #frame-heading, #margin-heading, #papertype-heading {
+    font-family: avenir;
+}

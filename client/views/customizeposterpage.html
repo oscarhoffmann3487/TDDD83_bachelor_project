@@ -1,0 +1,129 @@
+<!-- Sets initial event listerners to the buttons on the customization view-->
+<script>
+  initEventListeners()
+  loadPrices()
+</script>
+<div id="customizePosterPageFrame" style="margin-bottom: -10%;">
+  <div id="images">
+    <div id="image-frame-small-upper">
+      <div id="image-frame-small-upper-picture" style="outline:0px solid black; border:0px solid white;">
+      </div>
+    </div>
+    <div id="image-frame-small-lower">
+      <div id="image-frame-small-lower-picture" style="outline:0px solid black; border:0px solid white;">
+      </div>
+    </div>
+    <div id="image-frame-large" style="outline:0px solid black; border:0px solid white;">
+
+    </div>
+  </div>
+  <div class="dropdown show cusromizing-dropdown p-2">
+    <div>
+      <div class="container" id="con-heading">
+        <div class="col" id="heading">
+          select size (cm)
+        </div>
+        <div class="col" id="size-heading">
+        </div>
+      </div>
+
+      <!-- The check in class determines pre chosen option -->
+      <input type="radio" name="size" value="20" hidden id="20" onclick="changeBorder1()">
+      <label for="20" class="size-radio-btn">20 x 20</label>
+      <input type="radio" name="size" value="40" hidden id="40" onclick="changeBorder2()">
+      <label for="40" class="size-radio-btn">40 x 40</label>
+      <input type="radio" name="size" value="50" hidden id="50" onclick="changeBorder3()">
+      <label for="50" class="size-radio-btn">50 x 50</label>
+      <input type="radio" name="size" value="60" hidden id="60" onclick="changeBorder4()">
+      <label for="60" class="size-radio-btn">60 x 60</label>
+      <br>
+
+      <div class="container" id="con-heading">
+        <div class="col" id="heading">
+          select frame*
+        </div>
+        <div class="col" id="frame-heading">
+        </div>
+      </div>
+
+      <input type="radio" name="frame" value="no" hidden id="no frame" onclick="changeFrame0()">
+      <label for="no frame" class="frame-radio-btn frame-bigger">no frame</label>
+      <input type="radio" name="frame" value="white" hidden id="white" onclick="changeFrame1()">
+      <label for="white" class="frame-radio-btn">white</label>
+      <br>
+      <input type="radio" name="frame" value="brown" hidden id="brown" onclick="changeFrame2()">
+      <label for="brown" class="frame-radio-btn">brown</label>
+      <input type="radio" name="frame" value="black" hidden id="black" onclick="changeFrame3()">
+      <label for="black" class="frame-radio-btn">black</label>
+      <input type="radio" name="frame" value="gold" hidden id="gold" onclick="changeFrame4()">
+      <label for="gold" class="frame-radio-btn">gold</label>
+      <br>
+
+      <div class="container" id="con-heading">
+        <div class="col" id="heading">
+          select margin
+        </div>
+        <div class="col" id="margin-heading">
+        </div>
+      </div>
+      <!-- The check in class determines pre chosen option -->
+      <input type="radio" name="margin" value="no" hidden id="no" onclick="changeMargin1()">
+      <label for="no" class="margin-radio-btn margin-bigger">no margin</label>
+      <br>
+      <input type="radio" name="margin" value="10%" hidden id="10%" onclick="changeMargin2()">
+      <label for="10%" class="margin-radio-btn">small</label>
+      <input type="radio" name="margin" value="20%" hidden id="20%" onclick="changeMargin3()">
+      <label for="20%" class="margin-radio-btn">medium</label>
+      <input type="radio" name="margin" value="30%" hidden id="30%" onclick="changeMargin4()">
+      <label for="30%" class="margin-radio-btn">large</label>
+      <br>
+
+      <div class="container" id="con-heading">
+        <div class="col" id="heading">
+          select papertype*
+        </div>
+        <div class="col" id="papertype-heading">
+        </div>
+      </div>
+      <input type="radio" name="papertype" value="standard" hidden id="standard" onclick="changeStandard()">
+      <label for="standard" class="papertype-radio-btn">matte</label>
+      <input type="radio" name="papertype" value="glossy" hidden id="glossy" onclick="changeGlossy()">
+      <label for="glossy" class="papertype-radio-btn">glossy</label>
+    </div>
+    <div>
+      <div class="dropdown-menu">
+        <table class="dropdownTable">
+          <tr>
+            <td>
+            </td>
+            <td class="dropDownPricing" id="standardDropDownPricing">
+            </td>
+          </tr>
+          <tr>
+            <td class="dropDownPricing" id="GlossyDropDownPricing">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="gobackbutton"></div>
+<button type="button" class="btn btn-primary customize-buttons" id="addToCartBtn" onclick="addToCart()">
+  <span class="customize-buttons-text" id="addToCartText"> add to cart -</span>
+  <span id="priceBoxText"> </span>
+</button>
+
+<div style="margin-left: 15%; margin-right: 32%; margin-top: -430px; margin-bottom: -100px;">
+  <p style="margin-top: 170px;">*Frame: our frames are crafted with high-quality wood and made from sustainably
+    sourced materials.</p>
+  <br>
+  <p>*Paper type: Matte is a free option that is
+    perfect for spaces with natural light, while glossy is ideal for darker rooms or spaces that require a more
+    vibrant color display, and is available for a small additional cost.</p>
+  <img style="scale: 30%; margin-top: -48%; margin-left: 65%" src="../static/exampleimages/matte_glossy.png">
+
+</div>
+</div>
+<script>startPrice2();</script>
